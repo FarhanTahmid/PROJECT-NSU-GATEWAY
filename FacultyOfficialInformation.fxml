@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FacultyOfficialInfoController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="3.0" prefHeight="497.0" prefWidth="956.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane layoutY="-11.0" prefHeight="51.0" prefWidth="956.0" style="-fx-background-color: #ADD8E6;">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="-14.0" layoutY="13.0" prefHeight="25.0" prefWidth="956.0" text="OFFICIAL INFORMATION">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="facultyName" layoutX="76.0" layoutY="111.0" prefHeight="17.0" prefWidth="211.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="17.0" layoutY="111.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyDegree" layoutX="718.0" layoutY="321.0" prefHeight="25.0" prefWidth="236.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="17.0" layoutY="144.0" prefHeight="25.0" prefWidth="31.0" text="ID:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyDesignation" layoutX="162.0" layoutY="250.0" prefHeight="25.0" prefWidth="187.0" text="NAME" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyID" layoutX="78.0" layoutY="144.0" prefHeight="25.0" prefWidth="110.0" text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="24.0" layoutY="290.0" text="DEPARTMENT: " textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="23.0" layoutY="253.0" text="DESIGNATION:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyDepartment" layoutX="159.0" layoutY="287.0" prefHeight="25.0" prefWidth="284.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="393.0" layoutY="58.0" text="ONGOING COURSES" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyResearchArea" layoutX="635.0" layoutY="387.0" prefHeight="25.0" prefWidth="320.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="635.0" layoutY="324.0" text="DEGREE:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="officehour" layoutX="767.0" layoutY="286.0" prefHeight="25.0" prefWidth="187.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="635.0" layoutY="290.0" text="OFFCIE HOUR:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="officeID" layoutX="766.0" layoutY="250.0" prefHeight="25.0" prefWidth="187.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="634.0" layoutY="253.0" text="OFFFICE:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyContactNo" layoutX="158.0" layoutY="357.0" prefHeight="25.0" prefWidth="377.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="360.0" text="CONTACT NO:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="facultyEmail" layoutX="159.0" layoutY="320.0" prefHeight="25.0" prefWidth="343.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="23.0" layoutY="324.0" text="E-MAIL:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="course3" layoutX="357.0" layoutY="181.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="course2" layoutX="357.0" layoutY="149.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="course1" layoutX="357.0" layoutY="115.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label layoutX="635.0" layoutY="358.0" text="RESEARCH AREAS:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="section1" layoutX="432.0" layoutY="115.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="section2" layoutX="431.0" layoutY="149.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="section3" layoutX="432.0" layoutY="181.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="time1" layoutX="488.0" layoutY="115.0" prefHeight="20.0" prefWidth="149.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="time2" layoutX="488.0" layoutY="149.0" prefHeight="20.0" prefWidth="149.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Label fx:id="time3" layoutX="490.0" layoutY="181.0" prefHeight="20.0" prefWidth="155.0" text="NAME:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font></Label>
+            <Button fx:id="homebutton" layoutX="874.0" layoutY="447.0" mnemonicParsing="false" onAction="#goToHome" text="HOME">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

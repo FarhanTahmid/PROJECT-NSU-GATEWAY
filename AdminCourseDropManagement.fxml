@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminDropManagementController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="1030.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <Label alignment="CENTER" prefHeight="56.0" prefWidth="1030.0" text="STUDENT COURSE DROP WINDOW">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="courseDropTable" layoutX="193.0" layoutY="112.0" prefHeight="327.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="columnStudentID" prefWidth="122.0" text="Student ID" />
+          <TableColumn fx:id="columnCourseInitial" prefWidth="150.0" text="Course Initial" />
+            <TableColumn fx:id="columnFacultyInitial" prefWidth="171.0" text="Faculty Initial" />
+            <TableColumn fx:id="columnSection" prefWidth="185.0" text="Section" />
+        </columns>
+      </TableView>
+      <Button fx:id="dropAcceptButton" layoutX="423.0" layoutY="456.0" mnemonicParsing="false" onAction="#acceptCourseDrop" text="Accept">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Button fx:id="rejectCourseButton" layoutX="538.0" layoutY="456.0" mnemonicParsing="false" onAction="#rejectCourseButton" text="Reject">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Label layoutX="193.0" layoutY="73.0" prefHeight="17.0" prefWidth="472.0" text="Course Drop Requests" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

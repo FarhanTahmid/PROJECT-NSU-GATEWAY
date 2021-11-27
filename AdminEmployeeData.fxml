@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="textSearch" prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminEmployeeController">
+   <children>
+      <AnchorPane prefHeight="59.0" prefWidth="1030.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="59.0" prefWidth="1030.0" text="EMPLOYEE DATABASE">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableEmployee" layoutX="78.0" layoutY="139.0" prefHeight="308.0" prefWidth="839.0" style="-fx-background-color: #FFFFF;">
+        <columns>
+          <TableColumn fx:id="tableEmployeeId" prefWidth="87.0" text="Employee ID" />
+          <TableColumn fx:id="tableEmployeeNAme" prefWidth="200.0" text="Employee Name" />
+            <TableColumn fx:id="tableEmployeeDesignation" prefWidth="215.0" text="Employee Designation" />
+            <TableColumn fx:id="tableEmployeeType" prefWidth="143.0" text="Employee Type" />
+            <TableColumn fx:id="tableEmployeeOffice" prefWidth="193.0" text="Employee Office" />
+        </columns>
+      </TableView>
+      <Label layoutX="78.0" layoutY="75.0" prefHeight="59.0" prefWidth="297.0" text="EMPLOYEE DATABASE" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeButton" layoutX="948.0" layoutY="453.0" mnemonicParsing="false" onAction="#goHome" text="Home">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font></Button>
+      <TextField fx:id="searchField" layoutX="794.0" layoutY="104.0" prefHeight="25.0" prefWidth="123.0" promptText="Search Employee" />
+      <Label layoutX="730.0" layoutY="107.0" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

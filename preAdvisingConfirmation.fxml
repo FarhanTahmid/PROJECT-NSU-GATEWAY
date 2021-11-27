@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="389.0" prefWidth="612.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PreAdvisedListController">
+   <children>
+      <AnchorPane layoutX="-129.0" layoutY="-104.0" prefHeight="200.0" prefWidth="617.0">
+         <children>
+            <AnchorPane layoutX="128.0" layoutY="102.0" prefHeight="47.0" prefWidth="612.0" style="-fx-background-color: white;">
+               <children>
+                  <Label alignment="CENTER" layoutX="1.0" prefHeight="47.0" prefWidth="612.0" style="-fx-background-color: #ADD8E6;" text="Your Courses">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="duplicateCourse" alignment="CENTER" layoutX="128.0" layoutY="157.0" prefHeight="17.0" prefWidth="613.0" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="preadvisedCourses" layoutX="39.0" layoutY="87.0" prefHeight="239.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="preadvisedlistslcolumn" prefWidth="70.0" text="SL no." />
+          <TableColumn fx:id="preadvisedlistcourseinitialcolumn" prefWidth="121.0" text="Course Initial" />
+            <TableColumn fx:id="preadvisedlistcoursetitlecolumn" prefWidth="222.0" text="Course Title" />
+            <TableColumn fx:id="preadvisedlistcourseCredittitlecolumn" prefWidth="120.0" text="Credits" />
+        </columns>
+      </TableView>
+      <Button fx:id="saveForAdvisingButton" layoutX="157.0" layoutY="336.0" mnemonicParsing="false" onAction="#saveforAdvisimg" text="Save for Advising">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Button fx:id="cancelButton" layoutX="517.0" layoutY="351.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="77.0" text="Cancel">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Button fx:id="preadvisingcoursedeletebutton" layoutX="325.0" layoutY="336.0" mnemonicParsing="false" onAction="#preAdvisingCourseDeleteButton" text="Exclude Course">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

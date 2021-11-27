@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="616.0" prefWidth="1026.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentGradeHistory">
+   <children>
+      <AnchorPane layoutX="415.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="-401.0" layoutY="84.0" prefHeight="48.0" prefWidth="1016.0" text="Spring-2021" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="20.0" />
+               </font>
+            </Label>
+            <TableView fx:id="summer21Courses" layoutX="-245.0" layoutY="-50.0" prefHeight="125.0" prefWidth="683.0">
+               <columns>
+                  <TableColumn fx:id="summer2021courseSerialNo" prefWidth="75.0" text="Serial No." />
+                  <TableColumn fx:id="summer2021courseInitialColumn" prefWidth="173.0" text="COURSE INITIAL" />
+                  <TableColumn fx:id="summer2021facultyInitalColumn" prefWidth="161.0" text="FACULTY INITIAL" />
+                  <TableColumn fx:id="summer2021sectionColumn" minWidth="8.0" prefWidth="118.0" text="SECTION" />
+                  <TableColumn fx:id="summer2021gradeColumn" prefWidth="153.0" text="GRADES" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" prefHeight="61.0" prefWidth="1036.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="61.0" prefWidth="1035.0" text="GRADE HISTORY">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="fall2020Courses" layoutX="176.0" layoutY="457.0" prefHeight="125.0" prefWidth="683.0">
+         <columns>
+            <TableColumn fx:id="fall2020courseSerialNo2" prefWidth="75.0" text="Serial No." />
+            <TableColumn fx:id="fall2020courseInitialColumn2" prefWidth="173.0" text="COURSE INITIAL" />
+            <TableColumn fx:id="fall2020facultyInitalColumn2" prefWidth="161.0" text="FACULTY INITIAL" />
+            <TableColumn fx:id="fall2020sectionColumn2" minWidth="8.0" prefWidth="118.0" text="SECTION" />
+            <TableColumn fx:id="fall2020gradeColumn2" prefWidth="153.0" text="GRADES" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="62.0" prefHeight="48.0" prefWidth="1035.0" text="Summer-2021" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="7.0" layoutY="409.0" prefHeight="48.0" prefWidth="1016.0" text="Fall-2021" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="spring21Courses" layoutX="174.0" layoutY="285.0" prefHeight="125.0" prefWidth="683.0">
+         <columns>
+            <TableColumn fx:id="spring21courseSerialNo1" prefWidth="75.0" text="Serial No." />
+            <TableColumn fx:id="spring21courseInitialColumn1" prefWidth="173.0" text="COURSE INITIAL" />
+            <TableColumn fx:id="spring21facultyInitalColumn1" prefWidth="161.0" text="FACULTY INITIAL" />
+            <TableColumn fx:id="spring21sectionColumn1" minWidth="8.0" prefWidth="118.0" text="SECTION" />
+            <TableColumn fx:id="spring21gradeColumn1" prefWidth="153.0" text="GRADES" />
+         </columns>
+      </TableView>
+      <Button fx:id="homebutton" layoutX="953.0" layoutY="570.0" mnemonicParsing="false" onAction="#goHome" text="Home">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

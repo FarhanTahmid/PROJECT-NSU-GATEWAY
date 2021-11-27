@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CourseDropRequestController">
+   <children>
+      <AnchorPane layoutX="-23.0" layoutY="6.0" prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane layoutX="23.0" layoutY="-9.0" prefHeight="61.0" prefWidth="1018.0" style="-fx-background-color: #ADD8E6;">
+               <children>
+                  <Label alignment="CENTER" layoutX="-7.0" layoutY="3.0" prefHeight="58.0" prefWidth="1016.0" text="Drop Courses">
+                     <font>
+                        <Font name="Bookshelf Symbol 7" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="summer21Courses" layoutX="51.0" layoutY="101.0" prefHeight="350.0" prefWidth="854.0">
+               <columns>
+                  <TableColumn fx:id="courseSerialNo" prefWidth="75.0" text="Serial No." />
+                  <TableColumn fx:id="courseInitialColumn" prefWidth="173.0" text="COURSE INITIAL" />
+                  <TableColumn fx:id="facultyInitalColumn" prefWidth="161.0" text="FACULTY INITIAL" />
+                  <TableColumn fx:id="sectionColumn" minWidth="8.0" prefWidth="118.0" text="SECTION" />
+                  <TableColumn fx:id="timeColumn" prefWidth="173.0" text="TIME" />
+                  <TableColumn fx:id="gradeColumn" prefWidth="153.0" text="GRADES" />
+               </columns>
+            </TableView>
+            <Button fx:id="homeButton" layoutX="973.0" layoutY="458.0" mnemonicParsing="false" onAction="#goHome" text="HOME">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font></Button>
+            <Button fx:id="dropButton" layoutX="905.0" layoutY="276.0" mnemonicParsing="false" onAction="#dropButton" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: red;" text="Request Drop">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

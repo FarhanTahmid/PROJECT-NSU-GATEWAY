@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminStudentInformationController">
+   <children>
+      <AnchorPane layoutX="-137.0" layoutY="-109.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane layoutX="415.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="58.0" prefWidth="1033.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="58.0" prefWidth="1033.0" style="-fx-background-color: #ADD8E6;" text="STUDENT ACADEMIC AND PERSONAL INFORMATION">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="studentDataTable" layoutX="26.0" layoutY="125.0" prefHeight="336.0" prefWidth="827.0">
+        <columns>
+          <TableColumn fx:id="studentIDColumn" prefWidth="78.0" text="Student ID" />
+          <TableColumn fx:id="studentNameColumn" prefWidth="174.0" text="Student Name" />
+            <TableColumn fx:id="studentDepartmentColumn" prefWidth="206.0" text="Department" />
+            <TableColumn fx:id="studentCurrentCurriculumcolum" prefWidth="237.0" text="Current Cuuriculum" />
+            <TableColumn fx:id="studentEnrollmentSemester" prefWidth="131.0" text="Email ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="26.0" layoutY="83.0" prefHeight="17.0" prefWidth="234.0" text="STUDENT DATABASE" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="638.0" layoutY="94.0" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="704.0" layoutY="95.0" prefHeight="10.0" prefWidth="149.0" promptText="Search " />
+      <Button fx:id="showPersonalInfoButton" layoutX="853.0" layoutY="268.0" mnemonicParsing="false" onAction="#showPersonalInfo" prefHeight="25.0" prefWidth="178.0" text="Show Personal Info">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <Button fx:id="showAcademcInfoButton" layoutX="853.0" layoutY="222.0" mnemonicParsing="false" onAction="#showAcademicInfo" prefHeight="25.0" prefWidth="178.0" text="Show Academic Info">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+      <Button fx:id="goHomeButton" layoutX="943.0" layoutY="461.0" mnemonicParsing="false" onAction="#goHome" text="Home">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Button fx:id="emailSendButton" layoutX="853.0" layoutY="316.0" mnemonicParsing="false" onAction="#sendMail" prefHeight="25.0" prefWidth="178.0" text="Send Email">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

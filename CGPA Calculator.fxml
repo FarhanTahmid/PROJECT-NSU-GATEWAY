@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CGPACalculatorController">
+   <children>
+      <AnchorPane layoutX="415.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane layoutX="-3.0" layoutY="-1.0" prefHeight="58.0" prefWidth="1038.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="4.0" prefHeight="49.0" prefWidth="1038.0" style="-fx-background-color: #ADD8E6;" text="CGPA CALCULATOR">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="cgpaTable" layoutX="26.0" layoutY="165.0" prefHeight="258.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="cgpaTableCourseName" prefWidth="180.0" text="Course Name" />
+          <TableColumn fx:id="cgpaTableCredit" prefWidth="160.0" text="Credits" />
+            <TableColumn fx:id="cgpaTableObtainedGrade" prefWidth="277.0" text="ObtainedGrade" />
+        </columns>
+      </TableView>
+      <TextField fx:id="courseName" layoutX="158.0" layoutY="105.0" prefHeight="12.0" prefWidth="83.0" promptText="Optional" />
+      <Label layoutX="28.0" layoutY="106.0" text="Course Name:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="107.0" text="Credits:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditsTextField" layoutX="334.0" layoutY="105.0" prefHeight="25.0" prefWidth="46.0" text=" " />
+      <Label layoutX="410.0" layoutY="106.0" text="Obtained Grade: " textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="grades" layoutX="566.0" layoutY="105.0" prefHeight="25.0" prefWidth="46.0" />
+      <Button fx:id="calculate" layoutX="332.0" layoutY="433.0" mnemonicParsing="false" onAction="#calculateCgpa" text="Calculate">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Button fx:id="removeAnEntryButton" layoutX="235.0" layoutY="433.0" mnemonicParsing="false" onAction="#removeEntry" text="Remove">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Label fx:id="cgpaOutput" alignment="CENTER" layoutX="618.0" layoutY="255.0" prefHeight="50.0" prefWidth="420.0" text="CGPA" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="addbutton" defaultButton="true" layoutX="635.0" layoutY="165.0" mnemonicParsing="false" onAction="#addfield" text="Add Data">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Button fx:id="homebutton" layoutX="947.0" layoutY="458.0" mnemonicParsing="false" onAction="#gohome" text="Home">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Circle blendMode="ADD" fill="#1b6794" layoutX="828.0" layoutY="280.0" opacity="0.5" radius="100.0" stroke="#41779a" strokeType="OUTSIDE" />
+   </children>
+</AnchorPane>

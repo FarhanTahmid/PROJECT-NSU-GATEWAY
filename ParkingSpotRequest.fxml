@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="380.0" prefWidth="672.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ParkingSpotRequestController">
+   <children>
+      <AnchorPane layoutX="-128.0" layoutY="-119.0" prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="57.0" prefWidth="673.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="673.0" style="-fx-background-color: #ADD8E6;" text="REQUEST PARKING SPOT">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="102.0" text="Choose Your Vehicle Type:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="motorCycleButton" layoutX="33.0" layoutY="136.0" mnemonicParsing="false" text="Motor Cycle" textFill="#fffbfb">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="vehicleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="privateCarButton" layoutX="33.0" layoutY="165.0" mnemonicParsing="false" text="Private Car" textFill="#fffbfb" toggleGroup="$vehicleGroup">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="SUVbutton" layoutX="33.0" layoutY="197.0" mnemonicParsing="false" text="SUV" textFill="#fffbfb" toggleGroup="$vehicleGroup">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="313.0" layoutY="211.0" text="License Plate Number:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="licencePlateTextField" layoutX="510.0" layoutY="212.0" promptText="enter License plate Number " />
+      <Label layoutX="14.0" layoutY="283.0" text="For Motor Cycles the Payable Amount Per Semester is 420/- BDT" textFill="#fff7f7">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="304.0" text="For Private Cars the Payable Amount Per Semester is 620/- BDT" textFill="#fff7f7">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="325.0" text="For SUVs the Payable Amount Per Semester is 820/- BDT" textFill="#fff7f7">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitRequest" layoutX="471.0" layoutY="344.0" mnemonicParsing="false" onAction="#parking" text="Submit Request and Go Home">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

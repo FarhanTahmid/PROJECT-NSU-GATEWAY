@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShowAcademicInfoController">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="1030.0" style="-fx-background-color: #ADD8E6;">
+         <children>
+            <Label alignment="CENTER" layoutY="-2.0" prefHeight="53.0" prefWidth="1030.0" text="STUDENT ACADEMIC INFORMATION">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <ImageView fx:id="studentImage1" fitHeight="211.0" fitWidth="186.0" layoutX="14.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="242.0" layoutY="122.0" text="GENERAL INFORMATION :" textFill="WHITE">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="18.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="175.0" text="Full Name :" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="fullName" layoutX="347.0" layoutY="175.0" prefHeight="25.0" prefWidth="362.0" text="Label" textFill="#fcfcfc">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label layoutX="243.0" layoutY="216.0" text="Student ID :" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="studentID" layoutX="347.0" layoutY="216.0" prefHeight="17.0" prefWidth="170.0" text="Label" textFill="#fcfcfc">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label layoutX="242.0" layoutY="261.0" text="Enrolled In :" textFill="#fffefe">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="curriculumName" layoutX="344.0" layoutY="261.0" prefHeight="25.0" prefWidth="249.0" text="Label" textFill="#f2eeee">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label layoutX="242.0" layoutY="304.0" text="Entry Item :" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label layoutX="713.0" layoutY="122.0" text="ACADEMIC INFO :" textFill="WHITE">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="18.0" />
+         </font></Label>
+      <Label layoutX="711.0" layoutY="175.0" text="Current Status :" textFill="#fcfcfc">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label layoutX="711.0" layoutY="216.0" text="Current CGPA :" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label layoutX="711.0" layoutY="261.0" text="Credit Paseed : " textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label layoutX="712.0" layoutY="304.0" text="Probation : 0" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label layoutX="712.0" layoutY="349.0" text="Major1 : N/A" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label layoutX="712.0" layoutY="389.0" prefHeight="21.0" prefWidth="145.0" text="Major2 : N/A" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label fx:id="enrolledSemester" layoutX="344.0" layoutY="304.0" prefHeight="17.0" prefWidth="231.0" text="Label" textFill="#fcfcfc">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="currentStatus" layoutX="863.0" layoutY="175.0" prefHeight="25.0" prefWidth="119.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label fx:id="CGPA" layoutX="863.0" layoutY="213.0" prefHeight="25.0" prefWidth="106.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label fx:id="creditCompleted" layoutX="857.0" layoutY="261.0" prefHeight="25.0" prefWidth="119.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font></Label>
+      <Label fx:id="picturefullName" layoutX="28.0" layoutY="344.0" prefHeight="17.0" prefWidth="376.0" text="NAME" textFill="#fcfcfc">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Button fx:id="backHome" layoutX="933.0" layoutY="440.0" mnemonicParsing="false" onAction="#goHome" style="-fx-background-color: white;" text="Home">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

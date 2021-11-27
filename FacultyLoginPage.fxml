@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="1030.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FacultyLoggedInController">
+   <children>
+      <AnchorPane layoutX="373.0" layoutY="-31.0" prefHeight="200.0" prefWidth="200.0" />
+      <MenuBar layoutY="-1.0" prefHeight="34.0" prefWidth="1040.0" style="-fx-background-color: #ADD8E6;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Faculty Information">
+            <items>
+              <MenuItem id="showOfficialInfo" fx:id="shoOfficialInfo" mnemonicParsing="false" onAction="#showOfficialInfo" text="Show Official Information" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Courses and Student List">
+            <items>
+                  <Menu mnemonicParsing="false" text="CSE-299">
+                    <items>
+                      <MenuItem fx:id="cse299Sec15" mnemonicParsing="false" onAction="#showCSE299Sec15StudentList" text="Section 15" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="CSE-215">
+                    <items>
+                        <MenuItem id="cse215sec03" fx:id="cse215Sec03" mnemonicParsing="false" onAction="#showCSE215Sec03StudentList" text="Section 03" />
+                      <MenuItem id="cse215sec04" fx:id="cse215sec04" mnemonicParsing="false" onAction="#showCSE215Sec04StudentList" text="Section 04" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="CSE-173">
+                    <items>
+                      <MenuItem id="CSE173section04" fx:id="cs173Ston04" mnemonicParsing="false" onAction="#showStudentListCse173Section4" text="Section 04" />
+                        <MenuItem id="cse173section05" fx:id="cse173section05" mnemonicParsing="false" onAction="#showCSE173Sec05StudentList" text="Section 05" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="E-mail">
+            <items>
+              <MenuItem fx:id="sendEmail" mnemonicParsing="false" onAction="#sendMail" text="Write E-mail" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="28.0" layoutY="416.0" prefHeight="17.0" prefWidth="200.0" text="Designation:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="welcomefacultyName" layoutX="128.0" layoutY="68.0" prefHeight="27.0" prefWidth="304.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="374.0" text="Name: " textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <ImageView fx:id="universityLogo" fitHeight="235.0" fitWidth="209.0" layoutX="765.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="departmentName" alignment="TOP_CENTER" layoutX="681.0" layoutY="351.0" prefHeight="27.0" prefWidth="358.0" text="DEPARTMENT" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label alignment="TOP_CENTER" layoutX="674.0" layoutY="387.0" prefHeight="17.0" prefWidth="366.0" text="NORTH SOUTH UNIVERSITY" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <ImageView fx:id="facultyImageView" fitHeight="214.0" fitWidth="186.0" layoutX="28.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="28.0" layoutY="452.0" prefHeight="27.0" prefWidth="57.0" text="Office:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label layoutX="360.0" layoutY="376.0" prefHeight="27.0" prefWidth="57.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="facultyName" layoutX="138.0" layoutY="376.0" prefHeight="17.0" prefWidth="240.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="facultyDesignation" layoutX="140.0" layoutY="412.0" prefHeight="27.0" prefWidth="177.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="office" layoutX="139.0" layoutY="453.0" prefHeight="27.0" prefWidth="186.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Label fx:id="email" layoutX="432.0" layoutY="380.0" prefHeight="17.0" prefWidth="319.0" text="Label" textFill="#fff9f9">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font></Label>
+      <Button fx:id="logoutbutton" layoutX="937.0" layoutY="453.0" mnemonicParsing="false" onAction="#backtoLogin" text="LOGOUT">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></Button>
+      <Label layoutX="28.0" layoutY="72.0" text="WELCOME" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
